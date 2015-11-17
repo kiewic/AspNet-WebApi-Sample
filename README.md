@@ -1,2 +1,27 @@
-# AspNet-WebApi-Sample
-Basic sample of ASP.NET Web API with Entity Framework ( live at http://peeps.azurewebsites.net/ )
+## ASP.NET Web API Sample
+
+CRUD:
+
++ Create
++ Read
++ Update
++ Delete
+
+## REST Client
+
+Create: 
+
+POST to http://localhost:4022/api/persons
+
+Read:
+
+All: GET to http://localhost:4022/api/persons
+One: GET to 
+
+Update:
+
+PUT to http://localhost:4022/api/persons
+
+Delete:
+
+DELETE to http://localhost:4022/api/persons

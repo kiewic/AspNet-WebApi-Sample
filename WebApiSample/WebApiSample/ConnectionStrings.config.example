@@ -1,0 +1,5 @@
+﻿<connectionStrings>
+  <add name="WebApiSampleContext"
+      providerName="System.Data.SqlClient"
+      connectionString="Data Source=xxx.example.net;Initial Catalog=CrudExampleDb;Persist Security Info=True;User ID=kiewic;Password=XXX"/>
+</connectionStrings>

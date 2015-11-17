@@ -2,26 +2,29 @@
 
 CRUD:
 
-+ Create
-+ Read
-+ Update
-+ Delete
++ Create (POST)
++ Read (GET)
++ Update (PUT)
++ Delete (DELETE)
 
-## REST Client
+## CURL Client Examples
 
-Create: 
+Create:
 
-POST to http://localhost:4022/api/persons
+    curl -v -X POST http://peeps.azurewebsites.net/api/persons -d "{\"Name\": \"Gilberto\", \"Phone\": \"4253499816\"}" --header "Content-Type: application/json"
 
-Read:
+Read all:
 
-All: GET to http://localhost:4022/api/persons
-One: GET to 
+    curl -v http://peeps.azurewebsites.net/api/persons
+
+Read one:
+
+    curl -v http://peeps.azurewebsites.net/api/persons/4253499816
 
 Update:
 
-PUT to http://localhost:4022/api/persons
+    curl -v -X PUT http://peeps.azurewebsites.net/api/persons/4253499816 -d "{\"Name\": \"Gilberto S\" }" --header "Content-Type: application/json"
 
 Delete:
 
-DELETE to http://localhost:4022/api/persons
+    curl -v -X DELETE http://peeps.azurewebsites.net/api/persons/4253499816
